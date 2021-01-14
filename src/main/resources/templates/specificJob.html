@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Job Title</title>
+</head>
+<body>
+    <form th:action="@{/find5CitiesHaveMostSpecificJob}" method="post" >
+        <h3>Find 5 cities have most persons in a specific job</h3>
+        <input type="text" placeholder="job title" name="job"/>
+        <button type="submit">Result</button>
+    </form>
+    
+</body>
+</html>

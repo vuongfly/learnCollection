@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr th:each="person : ${list}">
+            <td th:text="${person.id}"></td>
+            <td th:text="${person.fullname}"></td>
+            <td th:text="${person.job}"></td>
+            <td th:text="${person.gender}"></td>
+            <td th:text="${person.city}"></td>
+            <td th:text="${person.salary}"></td>
+            <!-- <td th:text="${#numbers.formatDecimal(person.salary, 0, 'DEFAULT', 1,'DEFAULT')}"></td> -->
+            <td th:text="${#dates.format(person.birthday, 'dd-MM-yyyy')}"></td>
+        </tr>
+    </table>
+</body>
+</html>
