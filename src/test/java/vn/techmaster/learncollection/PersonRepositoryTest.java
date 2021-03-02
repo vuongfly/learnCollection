@@ -63,7 +63,7 @@ class PersonRepositoryTest {
 
 	@Test
 	public void testAverageJobSalary(){
-		HashMap<String, Float> averageJobSalary = personRepository.averageJobSalary();
+		HashMap<String, Double> averageJobSalary = personRepository.averageJobSalary();
 		// assertThat(averageJobSalary).hasSizeGreaterThan(5);
 		assertThat(averageJobSalary).hasSameSizeAs(personRepository.groupJobByCount());
 	}
@@ -71,7 +71,7 @@ class PersonRepositoryTest {
 	
 	@Test
 	public void testAverageJobAge(){
-		HashMap<String, Float> averageJobAge = personRepository.averageJobAge();
+		HashMap<String, Double> averageJobAge = personRepository.averageJobAge();
 		// assertThat(averageJobAge).hasSizeGreaterThan(5);
 		assertThat(averageJobAge).hasSizeGreaterThan(0);
 	}
@@ -79,7 +79,7 @@ class PersonRepositoryTest {
 	
 	@Test
 	public void testAverageCityAge(){
-		HashMap<String, Float> averageCityAge = personRepository.averageCityAge();
+		HashMap<String, Double> averageCityAge = personRepository.averageCityAge();
 		// assertThat(averageCityAge).hasSizeGreaterThan(5);
 		assertThat(averageCityAge).hasSizeGreaterThan(0);
 	}

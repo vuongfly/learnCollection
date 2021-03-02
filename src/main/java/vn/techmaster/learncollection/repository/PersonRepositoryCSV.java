@@ -114,7 +114,7 @@ public class PersonRepositoryCSV implements PersonRepositoryInterface {
   @Override
   public List<String> find5CitiesHaveMostSpecificJob(String job) {
 
-    return people.stream().filter(e -> e.getJob().equals(job))
+    return people.stream().filter(e -> e.getJob().contains(job))
         .collect(Collectors.groupingBy(Person::getCity, Collectors.counting()))
         // tra ve list gom (city, count)
         .entrySet().stream()
