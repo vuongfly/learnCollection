@@ -1,4 +1,10 @@
+#Hướng dẫn chạy project
+Tải project về máy.
+Mở project -> run
+Vào Chrome nhập đường dẫn http://localhost:8888/
+
 # Bài tập cuối năm 2020
+Bài tập Techmaster lớp Spring Boot
 
 Hạn nộp 8/1/2021. Sẽ chấm bài tại lớp.
 
